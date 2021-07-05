@@ -3,7 +3,12 @@
 
 
 # About Me
-<p>Hey Guys, I am Mohammad Jeeshan Siddiqui. I am a passionate Android Developer and a huge fan of design patterns, As a contributor to several open-source projects and an active user on Github. I am very excited to share my first android app with you guys. I gave my contribution to several open source projects. but Campus Management App is my first self developed android app. Which is fully reliable, fast, and lightweight.\n for more details please follow my website http://mjsiddiqui.me/</p>
+<p>Hey Guys, I am Mohammad Jeeshan Siddiqui. I am a passionate Android Developer and a huge fan of design patterns, As a contributor to several open-source projects and an active user on Github. I am very excited to share my first android app with you guys. I gave my contribution to several open source projects. but Campus Management App is my first self developed android app. Which is fully reliable, fast, and lightweight.
+for more details please follow my website http://mjsiddiqui.me/</p>
+
+
+# Download My App
+https://play.google.com/store/apps/details?id=com.mjsiddiqui.campusmanagement
 
 
 # Purpose of campus
