@@ -11,5 +11,5 @@ for more details please follow my website http://mjsiddiqui.me/</p>
 The main purpose of this app is to add mobility and automation to the process of managing student information of an institute. So that which data passed to the students in the form of the document is faster disseminated through the app. It summarises all the information related to academics. The users of the application are given privileges accordingly. The faculty will have the privilege of uploading and posting notices, notes, marks, attendance, assignments, etc. to the app whereas the students will have the only privilege of viewing the notices, downloading the document of the notes and books, view their attendance, view their results after each exam is finished, etc. We are also providing a community chatbox and payment options in the app. This application will help to resolves the tedious process of the college management process.
 
 
-# How App Works (Let's Watch This Video)
+# How App Works (Let's Watch This Video) Coming soon
 https://user-images.githubusercontent.com/66344914/124465788-706ce000-ddb3-11eb-9b69-f3fa9ce310f4.mp4
