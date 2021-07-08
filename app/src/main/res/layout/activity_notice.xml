@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Activity.NoticeActivity">
+
+    <ImageView
+        android:id="@+id/news_Logo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/btn"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/news_mTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorEvent"
+        android:justificationMode="inter_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Students of AKTU must know that keeping Arogya Setu is compulsory! "/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:id="@+id/news_mDate"
+            android:textSize="13dp"
+            android:layout_gravity="right|top"
+            android:textColor="@color/colorEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16-05-2021 (9:00am)"/>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/news_mText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="APJ Abdul Kalam Technical University made it compulsory for all students to download the Arogya Setu app. The University students who will be appearing for the end semester in the month of July are asked to install the Arogya Setu app on a compulsory basis. The decision to make the mobile application compulsory in the student’s phones was taken by the AKTU’s Examination Committee (EC) during a meeting held on May 19 through video conferencing. The meeting also decided to make IP Based CCTV cameras mandatory in the examination centres. According to the media reports, keeping the emergency situation in mind, top (A-class) institutions will be made self-center. The total number of such centres will be around 50. The reports also suggest, there will be no self-centre arrangement for institutions lying under B and C category. The committee also decided that if any student, employee or officer becomes corona positive during the examination, then the entire treatment for the same will be borne by the university's student welfare and employee welfare fund. If any employee and officer die of corona infection during this period, the university will provide Rs 5 lakh as financial help to the family concerned."
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/news_mPublisher"
+                android:textSize="13dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorEvent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Published By: Mohammad Asim"/>
+
+            <LinearLayout
+                android:id="@+id/notice_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:padding = "5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/spin">
+
+                <TextView
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delete This Notice"/>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_delete_forever"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

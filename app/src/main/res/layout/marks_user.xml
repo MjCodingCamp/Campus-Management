@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/marksUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:text="User-Name"
+            android:textColor="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="7dp"
+            android:layout_gravity="top|right">
+            <EditText
+                android:id="@+id/numObtain"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textAlignment="center"
+                android:inputType="number"
+                android:textSize="18dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:background="@drawable/spin"
+                android:textColor="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/numTotal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/spin"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/divider"/>
+</LinearLayout>

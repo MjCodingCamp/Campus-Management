@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SyllabusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#EAE0E0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="B.Tech 1st Year (AICTE Curriculum)"
+            android:textSize="17dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAlignment="textStart"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="B.Tech 2nd Year (AICTE Curriculum)"
+            android:textSize="17dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAlignment="textStart"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/year2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="B.Tech 3rd Year (AICTE Curriculum)"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/year3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:text="B.Tech 4th Year (AICTE Curriculum)"
+            android:textSize="17dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textAlignment="textStart"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/year4"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:elevation="15dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

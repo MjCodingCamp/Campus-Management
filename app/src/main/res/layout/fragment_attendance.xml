@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AttendanceFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="6dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TextView
+            android:id="@+id/attendance_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05:04:2021"
+            android:layout_gravity="top|left"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorEvent"/>
+        <TextClock
+            android:id="@+id/currentT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_gravity="top|right"
+            android:textColor="@color/colorEvent"
+            android:bufferType="spannable"
+            android:textStyle="bold"
+            android:text="12:00 pm"
+            android:format12Hour="hh:mm:ss a"/>
+    </FrameLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|center"
+        android:src="@drawable/divider"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="25dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/attendance_view"/>
+            <Button
+                android:id="@+id/attendance_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:text="Upload Attendance"
+                android:textSize="20dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:background="@drawable/button_view"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

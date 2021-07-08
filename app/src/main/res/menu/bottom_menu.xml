@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/news"
+        android:title="Notice Board"
+        android:enabled="true"
+        android:icon="@drawable/ic_notice"/>
+    <item
+        android:id="@+id/marks"
+        android:title="Marks"
+        android:enabled="true"
+        android:icon="@drawable/ic_marks"/>
+    <item
+        android:id="@+id/attendance"
+        android:title="Attendance"
+        android:enabled="true"
+        android:icon="@drawable/ic_attendance"/>
+    <item
+        android:id="@+id/chat_box"
+        android:title="Community"
+        android:enabled="true"
+        android:icon="@drawable/ic_chatbox"/>
+
+</menu>

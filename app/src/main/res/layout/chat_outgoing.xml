@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/chat_view"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="5dp"
+        android:background="@drawable/outgoing_bubble"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/chat_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more_vert"
+                android:layout_gravity="right"/>
+
+            <TextView
+                android:id="@+id/nameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/colorEvent"
+                android:text="Mohammad Jeeshan"
+                android:textSize="13dp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/messageTxt"
+            android:text="Good morning Mohammad Jeeshan and thank you so much for your love and support."
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="15dp"
+            android:justificationMode="inter_word"
+            android:textColor="#000000"
+            android:autoLink="web"
+            android:clickable="true"
+            android:linksClickable="true"
+            android:textColorLink="#0528F3"/>
+
+        <ImageView
+            android:id="@+id/chat_Image"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/failed_top"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/timeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="textEnd"
+            android:layout_gravity="end"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="15dp"
+            android:text="Time"
+            android:textColor="#3A3A38"
+            android:textSize="10dp"/>
+    </LinearLayout>
+
+</FrameLayout>

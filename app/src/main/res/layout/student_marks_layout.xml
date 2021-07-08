@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:id="@+id/students_attendance_view">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/percentage_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.timqi.sectorprogressview.ColorfulRingProgressView
+        android:id="@+id/marksBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="9dp"
+        app:bgColor="#FFFFFF"
+        app:fgColorEnd="@color/colorPrimary"
+        app:fgColorStart="@color/colorEvent"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6"
+        app:layout_constraintVertical_bias="0.35"
+        app:percent="70"
+        app:startAngle="0"
+        app:strokeWidth="7dp" />
+
+    <TextView
+        android:id="@+id/marks_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Sessional (BT-CS)"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marksBar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/marks_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17/20"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/marksBar"
+        app:layout_constraintEnd_toEndOf="@+id/marksBar"
+        app:layout_constraintStart_toStartOf="@+id/marksBar"
+        app:layout_constraintTop_toTopOf="@+id/marksBar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marksBar"
+        app:layout_constraintTop_toBottomOf="@+id/marks_name">
+
+        <TextView
+            android:id="@+id/examMark_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date- 08:05:2021"
+            android:textSize="12dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/evaluateMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evaluated By: Mohammad Asim"
+            android:textSize="12dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

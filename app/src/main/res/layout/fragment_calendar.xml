@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CalendarFragment">
+
+    <com.skyhope.eventcalenderlibrary.CalenderEvent
+        android:id="@+id/calender_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:selected_day_text_color="#FFFFFF"
+        app:selector_color="@color/colorPrimary"
+        app:off_month_day_color="#EAE0E0"
+        app:week_name_color="#E91E63"
+        app:current_month_day_color="@color/colorPrimaryDark"
+        app:month_color="@color/colorPrimaryDark"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Academic Events"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/holidays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Holidays"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/divider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Examination"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/divider"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

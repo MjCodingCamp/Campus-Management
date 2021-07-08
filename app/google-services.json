@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "328862369120",
+    "firebase_url": "https://campus-management91-default-rtdb.firebaseio.com",
+    "project_id": "campus-management91",
+    "storage_bucket": "campus-management91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328862369120:android:71d9b0afda3d8975360a05",
+        "android_client_info": {
+          "package_name": "com.mjsiddiqui.campusmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328862369120-rerdorhocp9ulfrfqspop6v0mjia88t1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1fTnXRsw4FEsTUhCoG77jtUEuZzTIlng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328862369120-rerdorhocp9ulfrfqspop6v0mjia88t1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

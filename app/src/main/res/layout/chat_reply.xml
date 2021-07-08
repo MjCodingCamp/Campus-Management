@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reply To:   "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/chat_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mohammad Jeeshan"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question:   "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:id="@+id/chat_userMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey guys good morning. today I am facing some update issue with my Android studio. Anyone have any idea how to update my current version of android studio."
+            android:textSize="18dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answers:   "
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"/>
+
+        <EditText
+            android:id="@+id/chat_userAns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="250dp"
+            android:textAllCaps="false"
+            android:inputType="textMultiLine"
+            android:textSize="18dp"
+            android:justificationMode="inter_word"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:hint="Add Description"
+            android:background="@drawable/edit_view"
+            android:textColor="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

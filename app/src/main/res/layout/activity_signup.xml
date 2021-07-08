@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Activity.SignUpActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center|top">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Campus Management"
+                android:textSize="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textAllCaps="false"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/xl_logo"
+                android:scaleType="center"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Account"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAllCaps="false"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up to get started as a"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp"
+                    android:textAllCaps="false"/>
+                <Spinner
+                    android:id="@+id/spin_SignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"/>
+            </FrameLayout>
+            <EditText
+                android:id="@+id/name"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Edit_View"
+                android:hint="Full Name"
+                android:paddingRight="15dp"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/email_Id"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Edit_View"
+                android:hint="Email ID"
+                android:paddingRight="15dp"
+                android:inputType="textEmailAddress"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:paddingRight="15dp"
+                    android:inputType="textWebPassword"
+                    style="@style/Edit_View"/>
+                <ImageView
+                    android:id="@+id/pass_eye"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/hide"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="right|center"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/course"
+                    style="@style/Edit_View"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:hint="Course Name"
+                    android:inputType="text"
+                    android:maxWidth="135dp"
+                    android:paddingRight="15dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/branch"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Branch Name"
+                    android:paddingRight="15dp"
+                    android:layout_gravity="right"
+                    android:inputType="text"
+                    android:maxWidth="135dp"
+                    style="@style/Edit_View"/>
+            </FrameLayout>
+            <Button
+                android:id="@+id/btn_signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sign Up"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:background="@drawable/button_view"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

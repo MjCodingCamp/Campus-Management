@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password ?"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can reset your password here"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/forgot_passText"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Valid Email"
+        android:paddingRight="15dp"
+        android:inputType="textEmailAddress"
+        android:drawableStart="@drawable/ic_username"
+        style="@style/Edit_View"/>
+</LinearLayout>

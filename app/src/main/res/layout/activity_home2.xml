@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Activity.HomeActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarView2"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D5CCE8"
+        app:title="Campus Management"
+        app:titleMarginStart="30dp"
+        app:titleTextColor="@color/colorPrimaryDark"
+        android:elevation="5dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <FrameLayout
+        android:id="@+id/main_Container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconSize="28dp"
+        app:elevation="10dp"
+        app:backgroundTint="#D5CCE8"
+        app:menu="@menu/bottom_menu"/>
+
+</LinearLayout>
